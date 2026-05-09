@@ -1,0 +1,107 @@
+@import url(main.css);
+
+.about-container{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:30px;
+  max-width:1400px;
+  margin:60px auto;
+}
+
+.about-card{
+  background:var(--medium-green);
+  padding:35px 25px;
+  border-radius:24px;
+  color:var(--white);
+  text-align:center;
+  transition:0.3s;
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+
+.about-card:hover{
+  transform:translateY(-6px);
+  background:var(--dark-green);
+}
+
+.hobby-icon{
+  font-size:60px;
+  margin-bottom:18px;
+}
+
+.about-card h3{
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+.about-card p{
+  font-size:16px;
+  line-height:1.7;
+}
+
+
+.gallery-links{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  max-width:1400px;
+  margin:60px auto;
+}
+
+.gallery-link-card{
+  background:var(--medium-green);
+  padding:35px 25px;
+  border-radius:24px;
+  text-align:center;
+  color:var(--white);
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+  transition:0.3s;
+}
+
+.gallery-link-card:hover{
+  transform:translateY(-6px);
+  background:var(--dark-green);
+}
+
+.gallery-link-card h3{
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+.gallery-link-card p{
+  font-size:17px;
+  line-height:1.7;
+  margin-bottom:20px;
+}
+
+
+.gallery-btn{
+  display:inline-block;
+  padding:14px 28px;
+  background:var(--darkest-green);
+  color:var(--white);
+  text-decoration:none;
+  border-radius:12px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.gallery-btn:hover{
+  background:var(--light-green);
+  transform:translateY(-3px);
+}
+
+@media(max-width:1000px){
+
+  .about-container{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:700px){
+
+  .about-container{
+    grid-template-columns:1fr;
+  }
+
+}

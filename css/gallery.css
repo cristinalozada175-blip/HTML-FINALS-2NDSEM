@@ -1,0 +1,125 @@
+@import url(main.css);
+
+.gallery{
+  padding:80px 8%;
+  text-align:center;
+}
+
+.gallery h2{
+  margin-bottom:10px;
+  font-size:42px;
+  color:var(--darkest-green);
+}
+
+.gallery > h4{
+  font-size:30px;
+  color:var(--dark-green);
+  margin-bottom:35px;
+  margin-top:0;
+  font-weight:bold;
+}
+
+.gallery-container{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:30px;
+  max-width:1300px;
+  margin:auto;
+}
+
+.gallery-item{
+  background:var(--medium-green);
+  padding:18px;
+  border-radius:22px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+  transition:0.3s;
+}
+
+.gallery-item:hover{
+  transform:translateY(-6px);
+}
+
+.gallery-item img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+.gallery-item h3{
+  margin-top:18px;
+  color:var(--darkest-green);
+  font-size:22px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.gallery-item p{
+  margin-top:12px;
+  color:var(--white);
+  font-size:18px;
+  line-height:1.8;
+  text-align:center;
+  padding:0 10px 10px;
+}
+
+.gallery-links{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:25px;
+  padding:60px 8% 20px;
+}
+
+.gallery-link-card{
+  background:var(--medium-green);
+  padding:35px 25px;
+  border-radius:22px;
+  text-decoration:none;
+  color:var(--white);
+  text-align:center;
+  transition:0.3s;
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+
+.gallery-link-card:hover{
+  transform:translateY(-6px);
+  background:var(--dark-green);
+}
+
+.gallery-link-card h3{
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+.gallery-link-card p{
+  font-size:17px;
+  line-height:1.7;
+}
+
+
+.gallery-btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:14px 28px;
+  background:var(--darkest-green);
+  color:var(--white);
+  text-decoration:none;
+  border-radius:12px;
+  font-size:18px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.gallery-btn:hover{
+  background:var(--dark-green);
+  transform:translateY(-3px);
+}
+
+
+@media(max-width:900px){
+
+  .gallery-container{
+    grid-template-columns:1fr;
+  }
+
+}
